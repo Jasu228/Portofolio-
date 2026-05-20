@@ -79,7 +79,7 @@ export default function App() {
             <div className="rounded-[2rem] border border-white/10 bg-white/5 p-8 shadow-[0_30px_80px_-40px_rgba(56,189,248,0.75)] backdrop-blur-xl">
               <div className="flex h-full flex-col justify-between gap-8">
                 <div className="rounded-[2rem] bg-slate-900/80 p-8 text-center">
-                  <img src="/profile.svg" alt="Foto profil Jaka Suganda" className="mx-auto mb-6 h-40 w-40 rounded-full border-4 border-cyan-400 object-cover shadow-inner shadow-cyan-500/20" />
+                  <img src="/profile.jpg" alt="Foto profil Jaka Suganda" className="mx-auto mb-6 h-40 w-40 rounded-full border-4 border-cyan-400 object-cover shadow-inner shadow-cyan-500/20" />
                   <p className="text-sm uppercase tracking-[0.32em] text-cyan-400">Profil</p>
                   <h2 className="mt-4 text-3xl font-bold text-slate-100">Jaka Suganda</h2>
                   <p className="mt-3 text-slate-400">Frontend Developer | UI/UX Designer | Mobile App </p>
