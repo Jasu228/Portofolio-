@@ -31,13 +31,13 @@ export default function App() {
     },
     {
       label: "WhatsApp",
-      value: "+62 812-3456-7890",
-      href: "https://wa.me/6281234567890",
+      value: "+62 812-6098-4950",
+      href: "https://wa.me/6281260984950",
     },
     {
       label: "LinkedIn",
       value: "Jaka Suganda",
-      href: "https://www.linkedin.com/in/Jaka Suganda",
+      href: "https://www.linkedin.com/in/jaka-suganda-603b3a3a6/",
     },
   ];
 
@@ -67,7 +67,9 @@ export default function App() {
               <span className="inline-flex rounded-full border border-cyan-500/25 bg-cyan-500/10 px-4 py-1 text-sm text-cyan-300">Frontend Developer & UI/UX Creator</span>
               <div className="space-y-6">
                 <h1 className="text-5xl font-black tracking-tight text-slate-50 sm:text-6xl">Halo, saya Jaka Suganda.</h1>
-                <p className="max-w-xl text-lg leading-8 text-slate-300">Saya membuat pengalaman digital yang menarik untuk website dan aplikasi mobile dengan tampilan modern dan performa cepat.</p>
+                <p className="max-w-xl text-lg leading-8 text-slate-300">Saya seorang mahasiswa Universitas Islam Sumatera Utara.
+                  Saya bisa membantu ada membuat website, aplikasi mobile, dan desain UI/UX yang menarik dan mudah digunakan,
+                </p>
               </div>
               <div className="flex flex-wrap gap-4">
                 <a href="#projects" className="rounded-full bg-cyan-500 px-6 py-3 text-sm font-semibold text-slate-950 transition hover:bg-cyan-400">Lihat Proyek</a>
@@ -102,8 +104,8 @@ export default function App() {
         <section id="about" className="border-t border-white/10 px-6 py-24 sm:px-10">
           <div className="mx-auto max-w-6xl space-y-10">
             <div className="max-w-2xl">
-              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-cyan-400">Tentang Saya</p>
-              <h2 className="mt-4 text-4xl font-bold text-slate-50">Saya membantu brand tampil menarik secara digital.</h2>
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-cyan-400">Saya Bisa membantu Anda</p>
+              <h2 className="mt-4 text-4xl font-bold text-slate-50">Saya bisa membantu brand anda memiliki tampil menarik secara digital.</h2>
               <p className="mt-6 text-lg leading-8 text-slate-300">Saya fokus mengembangkan website dan aplikasi mobile dengan desain yang modern, mudah digunakan, dan responsif. Hasil kerja saya selalu mengutamakan pengalaman pengguna dan performa cepat.</p>
             </div>
 
