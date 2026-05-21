@@ -14,7 +14,7 @@ export default function App() {
       title: "GluCare Apps",
       desc: "Aplikasi kesehatan mobile,bagi pengguna yang ingin mengecek apakah terkenak Diabetes atau tidak ",
       tag: "Flutter & Firebase",
-      href: "",
+      href: "https://github.com/Fadlan-Anwar/glucare_app",
     },
   ];
 
