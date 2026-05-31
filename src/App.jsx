@@ -12,7 +12,7 @@ export default function App() {
   const projects = [
     {
       title: "GluCare Apps",
-      desc: "Aplikasi kesehatan mobile,bagi pengguna yang ingin mengecek apakah terkenak Diabetes atau tidak ",
+      desc: "Aplikasi mobile kesehatan yang membantu pengguna memantau kondisi kesehatan, mengelola data pemeriksaan, dan memperoleh informasi terkait diabetes dengan antarmuka yang modern dan mudah digunakan.",
       tag: "Flutter & Firebase",
       href: "https://github.com/Fadlan-Anwar/glucare_app",
     },
@@ -52,10 +52,11 @@ export default function App() {
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4 text-sm text-slate-200 md:px-10">
           <span className="font-semibold tracking-[0.24em] text-cyan-400">JAKA SUGANDA</span>
           <nav className="hidden items-center gap-6 md:flex">
-            <a href="#about" className="transition hover:text-cyan-400">Tentang</a>
-            <a href="#skills" className="transition hover:text-cyan-400">Keahlian</a>
-            <a href="#projects" className="transition hover:text-cyan-400">Proyek</a>
-            <a href="#contact" className="transition hover:text-cyan-400">Kontak</a>
+            <a href="#about">Tentang</a>
+            <a href="#skills">Keahlian</a>
+            <a href="#projects">Proyek</a>
+            <a href="#case-study">Case Study</a>
+            <a href="#contact">Kontak</a>
           </nav>
         </div>
       </header>
@@ -168,7 +169,217 @@ export default function App() {
               ))}
             </div>
           </div>
-        </section>
+        </section> 
+
+              <section
+          id="case-study"
+            className="border-t border-white/10 px-6 py-24 sm:px-10"
+        >
+          <div className="mx-auto max-w-6xl">
+            <div className="mb-12">
+              <p className="text-sm font-semibold uppercase tracking-[0.32em] text-cyan-400">
+                Massive Challenge
+              </p>
+              <h2 className="mt-4 text-4xl font-bold text-slate-50">
+                GluCare Apps Case Study
+              </h2>
+            </div>
+          </div>
+            <div className="grid gap-6">
+
+              <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
+                <h3 className="mb-4 text-2xl font-semibold">
+                  📱 Project Overview
+                </h3>
+                <p className="text-slate-300 leading-7">
+                  GluCare Apps adalah aplikasi kesehatan berbasis mobile
+                  yang membantu pengguna memonitor kondisi kesehatan,
+                  mencatat aktivitas, dan memperoleh informasi terkait
+                  diabetes secara lebih mudah.
+                </p>
+              </div>
+
+              <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
+                <h3 className="mb-4 text-2xl font-semibold">
+                  🎯 Problem Statement
+                </h3>
+                <p className="text-slate-300 leading-7">
+                  Banyak pengguna kesulitan melakukan monitoring kesehatan
+                  secara konsisten karena aplikasi yang kompleks dan kurang
+                  memberikan visualisasi data yang mudah dipahami.
+                </p>
+              </div>
+
+              <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
+                <h3 className="mb-4 text-2xl font-semibold">
+                  🚀 Project Goals
+                </h3>
+
+                <ul className="list-disc pl-5 space-y-2 text-slate-300">
+                  <li>Membuat aplikasi yang mudah digunakan.</li>
+                  <li>Menampilkan progres kesehatan secara visual.</li>
+                  <li>Meningkatkan pengalaman pengguna.</li>
+                  <li>Menghadirkan antarmuka modern dan responsif.</li>
+                </ul>
+              </div>
+
+              <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
+                <h3 className="mb-4 text-2xl font-semibold">
+                  👨‍💻 My Contribution
+                </h3>
+
+                <ul className="list-disc pl-5 space-y-2 text-slate-300">
+                  <li>Mengembangkan tampilan aplikasi menggunakan Flutter.</li>
+                  <li>Membantu membuat desain antarmuka menggunakan Figma.</li>
+                  <li>Mengembangkan dan mengimplementasikan tampilan frontend aplikasi.</li>
+                  <li>Mengintegrasikan Firebase.</li>
+                  <li>Berkolaborasi dengan tim UI/UX.</li>
+                </ul>
+              </div>
+
+                    <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
+              <h3 className="mb-4 text-2xl font-semibold">
+                ⚙️ Technology Stack
+              </h3>
+
+              <div className="flex flex-wrap gap-3">
+                {["Flutter","Dart","Firebase","Figma","GitHub"].map((item)=>(
+                  <span
+                    key={item}
+                    className="rounded-full bg-cyan-500/10 px-4 py-2 text-cyan-300"
+                  >
+                    {item}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+        
+            <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
+              <h3 className="mb-4 text-2xl font-semibold">
+                🔄 Design Process
+              </h3>
+
+              <p className="text-slate-300 leading-7">
+                Research → Wireframe → UI Design → Frontend Development →
+                Testing → Deployment
+              </p>
+            </div>
+
+          <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
+            <h3 className="mb-6 text-2xl font-semibold">
+              📸 Development Evidence
+            </h3>
+
+            <p className="mb-6 text-slate-300">
+              Berikut beberapa kontribusi saya sebagai
+              hacker mobile
+            </p>
+
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+                {/* Firebase */}
+                <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-4">
+                  <img
+                    src="/evidence/firebase-1.png"
+                    alt="Firebase Setup"
+                    className="w-full rounded-xl border border-white/10"
+                  />
+
+                  <h4 className="mt-4 text-xl font-semibold text-white">
+                    Firebase Integration
+                  </h4>
+
+                  <p className="mt-2 text-slate-400">
+                    Mengintegrasikan Firebase Authentication dan Firestore Database
+                    untuk kebutuhan penyimpanan data pengguna.
+                  </p>
+                </div>
+
+                {/* GitHub */}
+                <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-4">
+                  <img
+                    src="/evidence/github-1.png"
+                    alt="GitHub Collaboration"
+                    className="w-full rounded-xl border border-white/10"
+                  />
+
+                  <h4 className="mt-4 text-xl font-semibold text-white">
+                    GitHub Collaboration
+                  </h4>
+
+                  <p className="mt-2 text-slate-400">
+                    Mengelola source code bersama tim menggunakan GitHub,
+                    pull request, dan version control workflow.
+                  </p>
+                </div>
+
+                {/* UI Design */}
+                <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-4">
+                  <img
+                    src="/evidence/figma-1.png"
+                    alt="UI Design"
+                    className="w-full rounded-xl border border-white/10"
+                  />
+
+                  <h4 className="mt-4 text-xl font-semibold text-white">
+                    UI/UX Design
+                  </h4>
+
+                  <p className="mt-2 text-slate-400">
+                    Mendesain wireframe dan user interface menggunakan Figma
+                    sebelum tahap pengembangan aplikasi.
+                  </p>
+                </div>
+
+                {/* Frontend */}
+                <div className="rounded-2xl border border-white/10 bg-slate-950/40 p-4">
+                  <img
+                    src="/evidence/frontend-1.png"
+                    alt="Frontend Development"
+                    className="w-full rounded-xl border border-white/10"
+                  />
+
+                  <h4 className="mt-4 text-xl font-semibold text-white">
+                    Frontend Development
+                  </h4>
+
+                  <p className="mt-2 text-slate-400">
+                    Mengembangkan tampilan aplikasi Flutter yang responsif,
+                    modern, dan mudah digunakan pengguna.
+                  </p>
+                </div>
+
+              </div>
+
+            <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
+              <h3 className="mb-4 text-2xl font-semibold">
+                📈 Results & Impact
+              </h3>
+                        <ul className="list-disc pl-5 space-y-2 text-slate-300">
+                          <li>Berhasil mengembangkan prototype aplikasi.</li>
+                          <li>UI modern dan responsif.</li>
+                          <li>Navigasi lebih mudah digunakan.</li>
+                          <li>Kolaborasi tim berjalan efektif.</li>
+                        </ul>
+                      </div>
+
+                      <div className="rounded-3xl border border-white/10 bg-slate-900/80 p-8">
+                        <h3 className="mb-4 text-2xl font-semibold">
+                          📚 Pelajaran yang Dipetik
+                        </h3>
+
+                        <ul className="list-disc pl-5 space-y-2 text-slate-300">
+                          <li>Kolaborasi tim.</li>
+                          <li>Alur kerja pengembangan Flutter.</li>
+                          <li>Implementasi UI/UX.</li>
+                          <li>Kolaborasi Git & GitHub.</li>
+                        </ul>
+                      </div>
+
+                    </div>
+                  </div>
+                </section>
 
         <section id="contact" className="px-6 py-24 sm:px-10">
           <div className="mx-auto max-w-6xl rounded-[2rem] border border-white/10 bg-slate-900/80 p-10 shadow-[0_40px_120px_-40px_rgba(14,165,233,0.65)] backdrop-blur-xl">
