@@ -1,13 +1,50 @@
+import {
+  FaReact,
+  FaHtml5,
+  FaGithub,
+  FaPhp,
+  FaFigma,
+  FaLinkedin,
+  FaEnvelope,
+  FaWhatsapp,
+} from "react-icons/fa";
+
+import {
+  SiJavascript,
+  SiFlutter,
+} from "react-icons/si";
+
 export default function App() {
   const skills = [
-    "React",
-    "HTML & CSS",
-    "GitHub",
-    "php",
-    "Javascript",
-    "Figma",
-    "Flutter",
-  ];
+  {
+    name: "React",
+    icon: <FaReact size={40} className="text-cyan-400" />,
+  },
+  {
+    name: "HTML & CSS",
+    icon: <FaHtml5 size={40} className="text-orange-500" />,
+  },
+  {
+    name: "GitHub",
+    icon: <FaGithub size={40} className="text-white" />,
+  },
+  {
+    name: "PHP",
+    icon: <FaPhp size={40} className="text-indigo-400" />,
+  },
+  {
+    name: "Javascript",
+    icon: <SiJavascript size={40} className="text-yellow-400" />,
+  },
+  {
+    name: "Figma",
+    icon: <FaFigma size={40} className="text-pink-400" />,
+  },
+  {
+    name: "Flutter",
+    icon: <SiFlutter size={40} className="text-cyan-400" />,
+  },
+];
 
   const projects = [
     {
@@ -141,10 +178,19 @@ export default function App() {
 
             <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {skills.map((skill) => (
-                <div key={skill} className="rounded-3xl border border-white/10 bg-slate-900/70 p-6 text-center transition hover:-translate-y-1 hover:bg-slate-900/90">
-                  <p className="text-lg font-semibold text-slate-100">{skill}</p>
+              <div
+                key={skill.name}
+                className="rounded-3xl border border-white/10 bg-slate-900/70 p-6 text-center transition hover:-translate-y-2 hover:border-cyan-400"
+              >
+                <div className="flex justify-center mb-4">
+                  {skill.icon}
                 </div>
-              ))}
+
+                <p className="text-lg font-semibold text-slate-100">
+                  {skill.name}
+                </p>
+              </div>
+            ))}
             </div>
           </div>
         </section>
@@ -381,37 +427,109 @@ export default function App() {
                   </div>
                 </section>
 
-        <section id="contact" className="px-6 py-24 sm:px-10">
-          <div className="mx-auto max-w-6xl rounded-[2rem] border border-white/10 bg-slate-900/80 p-10 shadow-[0_40px_120px_-40px_rgba(14,165,233,0.65)] backdrop-blur-xl">
-            <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-[0.32em] text-cyan-400">Kontak</p>
-                <h2 className="mt-4 text-4xl font-bold text-slate-50">Siap membangun proyek bersama?</h2>
-                <p className="mt-6 max-w-xl text-lg leading-8 text-slate-300">Hubungi saya untuk mendiskusikan ide website, aplikasi mobile, atau pekerjaan desain yang ingin kamu wujudkan.</p>
-              </div>
-
-              <div className="space-y-4">
-                {contactItems.map((item) => (
-                  <a
-                    key={item.label}
-                    href={item.href}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="block rounded-3xl border border-white/10 bg-slate-950/70 px-6 py-5 text-slate-100 transition hover:border-cyan-400/40 hover:bg-slate-900"
+                  <section
+                    id="contact"
+                    className="border-t border-white/10 px-6 py-20 sm:px-10"
                   >
-                    <p className="text-sm uppercase tracking-[0.28em] text-slate-400">{item.label}</p>
-                    <p className="mt-2 text-base font-semibold">{item.value}</p>
-                  </a>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+                    <div className="mx-auto max-w-6xl">
+
+                      <div className="grid gap-10 md:grid-cols-4">
+
+                        {/* Profile */}
+                        <div>
+                          <h3 className="text-2xl font-bold text-white">
+                            Jaka Suganda
+                          </h3>
+
+                          <p className="mt-4 text-slate-400 leading-7">
+                            Frontend Developer & Mobile Developer
+                            yang fokus membangun website dan aplikasi
+                            modern dengan pengalaman pengguna yang baik.
+                          </p>
+
+                          <div className="mt-6 flex gap-3">
+                            <a
+                              href="https://github.com/Jasu228"
+                              target="_blank"
+                              className="rounded-xl border border-white/10 p-3 hover:border-cyan-400"
+                            >
+                                <FaGithub size={25} className="text-white" />,
+                            </a>
+
+                            <a
+                              href="https://www.linkedin.com/in/jaka-suganda-603b3a3a6/"
+                              target="_blank"
+                              className="rounded-xl border border-white/10 p-3 hover:border-cyan-400"
+                            >
+                              <FaLinkedin size={25} className="text-white" />
+                            </a>
+
+                            <a
+                              href="mailto:jakasuganda123@gmail.com"
+                              className="rounded-xl border border-white/10 p-3 hover:border-cyan-400"
+                            >
+                              <FaEnvelope size={25} className="text-white" />
+                            </a>
+                          </div>
+                        </div>
+
+                        {/* Navigation */}
+                        <div>
+                          <h4 className="mb-4 text-sm uppercase tracking-[0.2em] text-cyan-400">
+                            Navigation
+                          </h4>
+
+                          <ul className="space-y-3 text-slate-300">
+                            <li><a href="#about">Tentang</a></li>
+                            <li><a href="#skills">Keahlian</a></li>
+                            <li><a href="#projects">Project</a></li>
+                            <li><a href="#case-study">Case Study</a></li>
+                          </ul>
+                        </div>
+
+                        {/* Project */}
+                        <div>
+                          <h4 className="mb-4 text-sm uppercase tracking-[0.2em] text-cyan-400">
+                            Project
+                          </h4>
+
+                          <ul className="space-y-3 text-slate-300">
+                            <li>GluCare Apps</li>
+                            <li>UI/UX Design</li>
+                            <li>Frontend Development</li>
+                            <li>Firebase Integration</li>
+                          </ul>
+                        </div>
+
+                        {/* Contact */}
+                        <div>
+                          <h4 className="mb-4 text-sm uppercase tracking-[0.2em] text-cyan-400">
+                            Contact
+                          </h4>
+
+                          <ul className="space-y-3 text-slate-300">
+                            <li><FaEnvelope size={25} className="text-white" /> jakasuganda123@gmail.com</li>
+                            <li><FaWhatsapp size={25} className="text-white" /> +62 812-6098-4950</li>
+                            <li><FaLinkedin size={25} className="text-white" /> Jaka Suganda</li>
+                          </ul>
+                        </div>
+
+                      </div>
+
+                      <div className="mt-12 border-t border-white/10 pt-6 flex flex-col gap-4 md:flex-row md:justify-between">
+                        <p className="text-slate-500">
+                          © 2026 Jaka Suganda. All Rights Reserved.
+                        </p>
+
+                        <p className="text-slate-500">
+                          Frontend Developer & Mobile Developer
+                        </p>
+                      </div>
+
+                    </div>
+                  </section>
       </main>
 
-      <footer className="border-t border-white/10 py-8 text-center text-sm text-slate-500">
-        © 2026 Jaka Suganda.
-      </footer>
     </div>
   );
 }
